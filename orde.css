@@ -1,0 +1,44 @@
+.flex-container {
+    display: flex;
+    max-width: 350px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+.item {
+    flex: 1;
+    background: aquamarine;
+    color: black;
+    text-align: center;
+    font-size: 24px;
+    margin: 5PX;
+}
+.o1 {
+    order: 1;
+}
+.o2 {
+    order: 2;
+}
+.o3 {
+    order: 3;
+}
+.o4 {
+    order: 4;
+}
+.o5 {
+    order: 5;
+}
+.direction {
+    flex-direction: column;
+}
+
+
+.rosas {
+    margin-top: 180px;
+    padding: 0;
+    margin-left: 350px;
+    border: 2px solid beige;
+    border-radius: 20px;
+}
+.copyright {
+    margin-left: 350px;
+}

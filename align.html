@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align self</title>
+    
+    <style>
+        .flex-container {
+            
+            max-width: 350px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            display: flex;
+            
+        }
+        .align-container {
+            align-items: center;
+        }
+        .item {
+            background-color: aquamarine;
+            color: black;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+        .center {
+            align-self: center;
+        }
+        .start {
+            align-self: flex-start;
+        }
+        .end {
+            align-self: flex-end;
+        }
+        .baseline {
+            align-self: baseline;
+        }
+        .stretch {
+            align-self: stretch;
+        }
+        .auto{
+            align-self: auto;
+        }
+        .direction {
+            flex-direction: column;
+        }
+        .roxa {
+            padding: 0%;
+            margin-left: 350px;
+            border: 2px solid black;
+            border-radius: 20px;  
+            margin-top: 150px; 
+        }
+        .copyright {
+            margin-left: 350px;
+        } 
+        
+    </style>
+</head>
+<body>
+        <p>align-self</p>
+    <section class=" flex-container align-container">
+       <div class="item auto">AA0A</div>
+       <div class="item auto">123</div>
+       <div class="item auto">TYiiiiiioooiiiiiiiiiiiiiiiiiiiiiiiooooooooI</div>
+       <div class="item auto">900L</div>
+    </section>
+        <p>align</p>
+   <section class="flex-container">
+       <div class="item stretch">000A</div>
+       <div class="item auto">123</div>
+       <div class="item stretch">TPPPPPPppppppppppppppPPPPPPPYI</div>
+       <div class="item end">9000PÇL</div>
+   </section>
+   <p>align center</p>
+   <section class="flex-container">
+       <div class="item center">000A</div>
+       <div class="item center">123</div>
+       <div class="item start">TPPPPPPPPPPPPPYI</div>
+       <div class="item center">9000PÇL</div>
+   </section> 
+   <p>column</p>
+   <p>align</p>
+   <section class="flex-container align-container direction" >
+       <div class="item stretch">000A</div>
+       <div class="item auto">123</div>
+       <div class="item auto">TPPPPPPPPPPPPPYI</div>
+       <div class="item end">9000PÇL</div>
+   </section>
+   <section class="flex-container direction">
+    <div class="item stretch">000A</div>
+    <div class="item auto">123</div>
+    <div class="item stretch">TPPPPPPppppppppppppppPPPPPPPYI</div>
+    <div class="item end">9000PÇL</div>
+</section>
+<p>align center</p>
+<section class="flex-container direction">
+    <div class="item center">000A</div>
+    <div class="item center">123</div>
+    <div class="item start">TPPPPPPPPPPPPPYI</div>
+    <div class="item center">9000PÇL</div>
+</section>
+</body>
+<footer>
+    <img src="ros.jpg" width="650px" height="150px" class="roxa">
+    <p class="copyright">&copy; Copyright - Robot Alive - 2022
+</footer>
+</html>
